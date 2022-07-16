@@ -1,6 +1,6 @@
 /*TODO: [SAR-119] email validation failing for email ids with custom domain */
 function validateEmail(text) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(text)) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/.test(text)) {
         return (true)
     } else {
         return (false)
