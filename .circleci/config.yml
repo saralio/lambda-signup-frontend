@@ -74,7 +74,7 @@ commands:
           else
               baseUrl=$MY_ENV.saral.club
           fi 
-          url=$baseUrl/qna/<< parameters.question_id >>
+          url=$baseUrl
           statusCode=$(curl -o /dev/null -L "$url" --write-out '%{http_code}' -s)
           if [[ $statusCode != 200 ]]; then
             echo deployment failed with statuscode $statusCode
@@ -111,7 +111,7 @@ jobs:
   master:
     executor: base-image
     environment:
-      MY_ENV: &env prod
+      MY_ENV: prod
       MY_REGION: us-west-2
       BRANCH_NAME: &branch_name master
     steps:
