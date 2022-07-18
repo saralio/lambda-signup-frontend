@@ -7,12 +7,24 @@
     <style type="text/css">
         {% include "./static/styles.css" %}
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKH7YH85KP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WKH7YH85KP');
+    </script>
+
 </head>
 
 <body>
 
     <div class="title">
-        <h1>Get <a href="{{ template_data['navbar_links']['twitter_account_link'] }}" target="_blank" rel="noopener noreferrer">#RStats</a> Question A Day</h1>
+        <h1>Get <a href="{{ template_data['navbar_links']['twitter_account_link'] }}" target="_blank"
+                rel="noopener noreferrer">#RStats</a> Question A Day</h1>
     </div>
 
     <div class="login-box">
