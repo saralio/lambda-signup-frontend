@@ -124,17 +124,17 @@ body {
 
 #registerSuccessText {
 	display: none;
-	color:rgb(249, 247, 251);
+	color: rgb(249, 247, 251);
 }
 
 #registerUnSuccessfulText {
 	display: none;
-	color:rgb(249, 247, 251)
+	color: rgb(249, 247, 251)
 }
 
 #emailCheck {
 	display: none;
-	color:rgb(249, 247, 251)
+	color: rgb(249, 247, 251)
 }
 
 .title a {
@@ -157,4 +157,9 @@ body {
 		0 0 25px #03e9f4,
 		0 0 50px #03e9f4,
 		0 0 100px #03e9f4;
+}
+
+/* change watch color */
+input[type="time"]::-webkit-calendar-picker-indicator {
+	filter: invert(99%) sepia(2%) saturate(829%) hue-rotate(196deg) brightness(117%) contrast(100%)
 }
